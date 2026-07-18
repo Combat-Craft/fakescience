@@ -1,0 +1,898 @@
+[0.000000] (-) TimerEvent: {}
+[0.000411] (arm_2026) JobQueued: {'identifier': 'arm_2026', 'dependencies': OrderedDict()}
+[0.000507] (arm_bringup) JobQueued: {'identifier': 'arm_bringup', 'dependencies': OrderedDict()}
+[0.000573] (arm_control) JobQueued: {'identifier': 'arm_control', 'dependencies': OrderedDict()}
+[0.000634] (arm_description) JobQueued: {'identifier': 'arm_description', 'dependencies': OrderedDict()}
+[0.000695] (arm_2026) JobStarted: {'identifier': 'arm_2026'}
+[0.052333] (arm_bringup) JobStarted: {'identifier': 'arm_bringup'}
+[0.089338] (arm_control) JobStarted: {'identifier': 'arm_control'}
+[0.097068] (-) TimerEvent: {}
+[0.118016] (arm_2026) JobProgress: {'identifier': 'arm_2026', 'progress': 'cmake'}
+[0.119630] (arm_2026) Command: {'cmd': ['/usr/bin/cmake', '/home/rida/fakescience/src/tasc_arm/src/arm_2026', '-DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_2026'], 'cwd': '/home/rida/fakescience/build/arm_2026', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_2026'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[0.197330] (-) TimerEvent: {}
+[0.298026] (-) TimerEvent: {}
+[0.398916] (-) TimerEvent: {}
+[0.499884] (-) TimerEvent: {}
+[0.600654] (-) TimerEvent: {}
+[0.702062] (-) TimerEvent: {}
+[0.803217] (-) TimerEvent: {}
+[0.904031] (-) TimerEvent: {}
+[1.015416] (-) TimerEvent: {}
+[1.116167] (arm_2026) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.116423] (-) TimerEvent: {}
+[1.116628] (arm_control) JobProgress: {'identifier': 'arm_control', 'progress': 'cmake'}
+[1.117267] (arm_control) Command: {'cmd': ['/usr/bin/cmake', '/home/rida/fakescience/src/tasc_arm/src/arm_control', '-DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_control'], 'cwd': '/home/rida/fakescience/build/arm_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[1.175228] (arm_2026) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.217045] (-) TimerEvent: {}
+[1.248203] (arm_2026) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.317345] (-) TimerEvent: {}
+[1.355543] (arm_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.420716] (-) TimerEvent: {}
+[1.527343] (-) TimerEvent: {}
+[1.606903] (arm_2026) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.619243] (arm_2026) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.622140] (arm_2026) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.623466] (arm_2026) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.629236] (-) TimerEvent: {}
+[1.639834] (arm_2026) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.660459] (arm_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.694462] (arm_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.731719] (-) TimerEvent: {}
+[1.834400] (-) TimerEvent: {}
+[1.935543] (-) TimerEvent: {}
+[1.999045] (arm_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.035187] (arm_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.035474] (arm_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.035587] (-) TimerEvent: {}
+[2.039428] (arm_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.057401] (arm_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.136281] (-) TimerEvent: {}
+[2.214385] (arm_2026) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.237006] (-) TimerEvent: {}
+[2.279780] (arm_2026) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.284172] (arm_2026) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.288268] (arm_2026) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.337592] (-) TimerEvent: {}
+[2.345729] (arm_2026) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.438331] (-) TimerEvent: {}
+[2.541052] (-) TimerEvent: {}
+[2.564472] (arm_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.601334] (arm_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.602702] (arm_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.605928] (arm_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.628722] (arm_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.642376] (-) TimerEvent: {}
+[2.743064] (-) TimerEvent: {}
+[2.845269] (-) TimerEvent: {}
+[2.945962] (-) TimerEvent: {}
+[3.047190] (-) TimerEvent: {}
+[3.151157] (-) TimerEvent: {}
+[3.248996] (arm_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.251987] (-) TimerEvent: {}
+[3.355230] (-) TimerEvent: {}
+[3.384741] (arm_2026) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.455999] (-) TimerEvent: {}
+[3.558844] (-) TimerEvent: {}
+[3.629918] (arm_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/arm_bringup', 'build', '--build-base', '/home/rida/fakescience/build/arm_bringup/build', 'install', '--record', '/home/rida/fakescience/build/arm_bringup/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/rida/fakescience/src/tasc_arm/src/arm_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_CA:en', 'USER': 'rida', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib', 'HOME': '/home/rida', 'OLDPWD': '/home/rida/fakescience/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2025', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'rida', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'rida', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.3CDGS3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '42', 'AMENT_PREFIX_PATH': '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/rida/fakescience/build/arm_bringup', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/rida/fakescience/build/arm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rida/fakescience/install/arm_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2'}, 'shell': False}
+[3.659518] (-) TimerEvent: {}
+[3.761344] (-) TimerEvent: {}
+[3.861801] (-) TimerEvent: {}
+[3.923293] (arm_2026) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.924442] (arm_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.963127] (-) TimerEvent: {}
+[4.064061] (-) TimerEvent: {}
+[4.165084] (-) TimerEvent: {}
+[4.248762] (arm_2026) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.250838] (arm_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.267312] (-) TimerEvent: {}
+[4.304828] (arm_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.305804] (arm_2026) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.367882] (-) TimerEvent: {}
+[4.368519] (arm_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.369080] (arm_2026) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.379109] (arm_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[4.379431] (arm_bringup) StdoutLine: {'line': b'creating ../../../../build/arm_bringup/arm_bringup.egg-info\n'}
+[4.379637] (arm_bringup) StdoutLine: {'line': b'writing ../../../../build/arm_bringup/arm_bringup.egg-info/PKG-INFO\n'}
+[4.379750] (arm_bringup) StdoutLine: {'line': b'writing dependency_links to ../../../../build/arm_bringup/arm_bringup.egg-info/dependency_links.txt\n'}
+[4.379944] (arm_bringup) StdoutLine: {'line': b'writing entry points to ../../../../build/arm_bringup/arm_bringup.egg-info/entry_points.txt\n'}
+[4.380476] (arm_bringup) StdoutLine: {'line': b'writing requirements to ../../../../build/arm_bringup/arm_bringup.egg-info/requires.txt\n'}
+[4.380678] (arm_bringup) StdoutLine: {'line': b'writing top-level names to ../../../../build/arm_bringup/arm_bringup.egg-info/top_level.txt\n'}
+[4.383188] (arm_bringup) StdoutLine: {'line': b"writing manifest file '../../../../build/arm_bringup/arm_bringup.egg-info/SOURCES.txt'\n"}
+[4.387875] (arm_bringup) StdoutLine: {'line': b"reading manifest file '../../../../build/arm_bringup/arm_bringup.egg-info/SOURCES.txt'\n"}
+[4.390592] (arm_bringup) StdoutLine: {'line': b"writing manifest file '../../../../build/arm_bringup/arm_bringup.egg-info/SOURCES.txt'\n"}
+[4.391368] (arm_bringup) StdoutLine: {'line': b'running build\n'}
+[4.391521] (arm_bringup) StdoutLine: {'line': b'running build_py\n'}
+[4.393097] (arm_bringup) StdoutLine: {'line': b'creating /home/rida/fakescience/build/arm_bringup/build\n'}
+[4.393267] (arm_bringup) StdoutLine: {'line': b'creating /home/rida/fakescience/build/arm_bringup/build/lib\n'}
+[4.393393] (arm_bringup) StdoutLine: {'line': b'creating /home/rida/fakescience/build/arm_bringup/build/lib/arm_bringup\n'}
+[4.393490] (arm_bringup) StdoutLine: {'line': b'copying arm_bringup/__init__.py -> /home/rida/fakescience/build/arm_bringup/build/lib/arm_bringup\n'}
+[4.394186] (arm_bringup) StdoutLine: {'line': b'running install\n'}
+[4.394394] (arm_bringup) StdoutLine: {'line': b'running install_lib\n'}
+[4.396163] (arm_bringup) StdoutLine: {'line': b'creating /home/rida/fakescience/install/arm_bringup/lib/python3.10/site-packages/arm_bringup\n'}
+[4.396434] (arm_bringup) StdoutLine: {'line': b'copying /home/rida/fakescience/build/arm_bringup/build/lib/arm_bringup/__init__.py -> /home/rida/fakescience/install/arm_bringup/lib/python3.10/site-packages/arm_bringup\n'}
+[4.398256] (arm_bringup) StdoutLine: {'line': b'byte-compiling /home/rida/fakescience/install/arm_bringup/lib/python3.10/site-packages/arm_bringup/__init__.py to __init__.cpython-310.pyc\n'}
+[4.399007] (arm_bringup) StdoutLine: {'line': b'running install_data\n'}
+[4.399345] (arm_bringup) StdoutLine: {'line': b'creating /home/rida/fakescience/install/arm_bringup/share/ament_index\n'}
+[4.399583] (arm_bringup) StdoutLine: {'line': b'creating /home/rida/fakescience/install/arm_bringup/share/ament_index/resource_index\n'}
+[4.400130] (arm_bringup) StdoutLine: {'line': b'creating /home/rida/fakescience/install/arm_bringup/share/ament_index/resource_index/packages\n'}
+[4.400271] (arm_bringup) StdoutLine: {'line': b'copying resource/arm_bringup -> /home/rida/fakescience/install/arm_bringup/share/ament_index/resource_index/packages\n'}
+[4.401509] (arm_bringup) StdoutLine: {'line': b'copying package.xml -> /home/rida/fakescience/install/arm_bringup/share/arm_bringup\n'}
+[4.401705] (arm_bringup) StdoutLine: {'line': b'creating /home/rida/fakescience/install/arm_bringup/share/arm_bringup/launch\n'}
+[4.401946] (arm_bringup) StdoutLine: {'line': b'copying launch/bringup.launch.py -> /home/rida/fakescience/install/arm_bringup/share/arm_bringup/launch\n'}
+[4.403969] (arm_bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.408082] (arm_bringup) StdoutLine: {'line': b'Copying ../../../../build/arm_bringup/arm_bringup.egg-info to /home/rida/fakescience/install/arm_bringup/lib/python3.10/site-packages/arm_bringup-0.0.0-py3.10.egg-info\n'}
+[4.412984] (arm_bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[4.462408] (arm_2026) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.462708] (arm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.468199] (-) TimerEvent: {}
+[4.487353] (arm_bringup) StdoutLine: {'line': b"writing list of installed files to '/home/rida/fakescience/build/arm_bringup/install.log'\n"}
+[4.543424] (arm_bringup) CommandEnded: {'returncode': 0}
+[4.559553] (arm_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.560575] (arm_2026) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.573736] (-) TimerEvent: {}
+[4.598475] (arm_bringup) JobEnded: {'identifier': 'arm_bringup', 'rc': 0}
+[4.599794] (arm_description) JobStarted: {'identifier': 'arm_description'}
+[4.639004] (arm_description) JobProgress: {'identifier': 'arm_description', 'progress': 'cmake'}
+[4.642601] (arm_description) Command: {'cmd': ['/usr/bin/cmake', '/home/rida/fakescience/src/tasc_arm/src/arm_description', '-DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_description'], 'cwd': '/home/rida/fakescience/build/arm_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[4.674062] (-) TimerEvent: {}
+[4.775497] (-) TimerEvent: {}
+[4.815192] (arm_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[4.876304] (-) TimerEvent: {}
+[4.895618] (arm_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.896213] (arm_2026) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.925211] (arm_2026) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.925693] (arm_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.975149] (arm_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.977811] (-) TimerEvent: {}
+[4.999071] (arm_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.078789] (-) TimerEvent: {}
+[5.181072] (-) TimerEvent: {}
+[5.266219] (arm_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.281290] (-) TimerEvent: {}
+[5.286708] (arm_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.287119] (arm_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.291347] (arm_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.305180] (arm_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.381730] (-) TimerEvent: {}
+[5.446833] (arm_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.447114] (arm_2026) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.483409] (-) TimerEvent: {}
+[5.572367] (arm_2026) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.572655] (arm_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.584081] (-) TimerEvent: {}
+[5.594134] (arm_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.611146] (arm_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.612559] (arm_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.613916] (arm_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.636906] (arm_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.686113] (-) TimerEvent: {}
+[5.742609] (arm_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.751598] (arm_2026) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.787225] (-) TimerEvent: {}
+[5.837609] (arm_2026) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.840098] (arm_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.887853] (-) TimerEvent: {}
+[5.988698] (-) TimerEvent: {}
+[6.091039] (-) TimerEvent: {}
+[6.128276] (arm_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.131403] (arm_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.149482] (arm_2026) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.150030] (arm_2026) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.185689] (arm_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.191892] (-) TimerEvent: {}
+[6.293764] (-) TimerEvent: {}
+[6.397140] (-) TimerEvent: {}
+[6.423302] (arm_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.427251] (arm_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.435402] (arm_2026) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.435917] (arm_2026) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.498137] (-) TimerEvent: {}
+[6.599899] (-) TimerEvent: {}
+[6.671281] (arm_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.701190] (-) TimerEvent: {}
+[6.720384] (arm_2026) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[6.721023] (arm_control) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.14 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[6.803053] (-) TimerEvent: {}
+[6.831328] (arm_2026) StdoutLine: {'line': b'-- Found hardware_interface: 2.52.2 (/home/rida/ros2control/install/hardware_interface/share/hardware_interface/cmake)\n'}
+[6.831815] (arm_control) StdoutLine: {'line': b'-- Found hardware_interface: 2.52.2 (/home/rida/ros2control/install/hardware_interface/share/hardware_interface/cmake)\n'}
+[6.904190] (-) TimerEvent: {}
+[7.006240] (-) TimerEvent: {}
+[7.029280] (arm_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.037974] (arm_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.053432] (arm_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.065301] (arm_description) StdoutLine: {'line': b'-- Generating done\n'}
+[7.070887] (arm_description) StdoutLine: {'line': b'-- Build files have been written to: /home/rida/fakescience/build/arm_description\n'}
+[7.088674] (arm_description) CommandEnded: {'returncode': 0}
+[7.089829] (arm_description) JobProgress: {'identifier': 'arm_description', 'progress': 'build'}
+[7.089944] (arm_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rida/fakescience/build/arm_description', '--', '-j3', '-l3'], 'cwd': '/home/rida/fakescience/build/arm_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[7.109051] (-) TimerEvent: {}
+[7.209991] (-) TimerEvent: {}
+[7.227574] (arm_description) CommandEnded: {'returncode': 0}
+[7.233479] (arm_description) JobProgress: {'identifier': 'arm_description', 'progress': 'install'}
+[7.270661] (arm_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rida/fakescience/build/arm_description'], 'cwd': '/home/rida/fakescience/build/arm_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[7.301630] (arm_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.303344] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/urdf\n'}
+[7.303524] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/urdf/mini_arm.urdf\n'}
+[7.308082] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes\n'}
+[7.308325] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/gear_left.STL\n'}
+[7.310499] (-) TimerEvent: {}
+[7.312136] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/anchor_right.STL\n'}
+[7.315097] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/base_link.STL\n'}
+[7.413245] (-) TimerEvent: {}
+[7.514111] (-) TimerEvent: {}
+[7.522357] (arm_2026) StdoutLine: {'line': b'-- Found controller_manager: 2.52.2 (/home/rida/ros2control/install/controller_manager/share/controller_manager/cmake)\n'}
+[7.614804] (-) TimerEvent: {}
+[7.628584] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/wrist_Link.STL\n'}
+[7.717314] (-) TimerEvent: {}
+[7.742287] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/anchor_left.STL\n'}
+[7.744619] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/gear_right.STL\n'}
+[7.757121] (arm_2026) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[7.759394] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/finger_left.STL\n'}
+[7.773193] (arm_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.795962] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/end_base.STL\n'}
+[7.819274] (-) TimerEvent: {}
+[7.851400] (arm_control) StdoutLine: {'line': b'-- Generating done\n'}
+[7.868160] (arm_control) StdoutLine: {'line': b'-- Build files have been written to: /home/rida/fakescience/build/arm_control\n'}
+[7.900440] (arm_control) CommandEnded: {'returncode': 0}
+[7.901106] (arm_control) JobProgress: {'identifier': 'arm_control', 'progress': 'build'}
+[7.901153] (arm_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rida/fakescience/build/arm_control', '--', '-j3', '-l3'], 'cwd': '/home/rida/fakescience/build/arm_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[7.915180] (arm_2026) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[7.919557] (-) TimerEvent: {}
+[7.922720] (arm_2026) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[7.923244] (arm_2026) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[7.935714] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/base_rotator.STL\n'}
+[8.020261] (-) TimerEvent: {}
+[8.037286] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/finger_right.STL\n'}
+[8.089369] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/shoulder_link.STL\n'}
+[8.114322] (arm_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/arm_control.dir/src/mini_arm_hardware.cpp.o\x1b[0m\n'}
+[8.123373] (-) TimerEvent: {}
+[8.216812] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/meshes/elbow_Link.STL\n'}
+[8.223686] (-) TimerEvent: {}
+[8.324877] (-) TimerEvent: {}
+[8.425623] (-) TimerEvent: {}
+[8.526869] (-) TimerEvent: {}
+[8.529129] (arm_2026) StdoutLine: {'line': b'-- Found xacro: 2.1.1 (/opt/ros/humble/share/xacro/cmake)\n'}
+[8.605980] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/ament_index/resource_index/package_run_dependencies/arm_description\n'}
+[8.606555] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/ament_index/resource_index/parent_prefix_path/arm_description\n'}
+[8.606874] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/environment/ament_prefix_path.sh\n'}
+[8.607272] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/environment/ament_prefix_path.dsv\n'}
+[8.607397] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/environment/path.sh\n'}
+[8.607536] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/environment/path.dsv\n'}
+[8.607641] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/local_setup.bash\n'}
+[8.609517] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/local_setup.sh\n'}
+[8.610625] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/local_setup.zsh\n'}
+[8.610778] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/local_setup.dsv\n'}
+[8.611207] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/package.dsv\n'}
+[8.612672] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/ament_index/resource_index/packages/arm_description\n'}
+[8.612960] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/cmake/arm_descriptionConfig.cmake\n'}
+[8.613458] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/cmake/arm_descriptionConfig-version.cmake\n'}
+[8.616285] (arm_description) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_description/share/arm_description/package.xml\n'}
+[8.618208] (arm_description) CommandEnded: {'returncode': 0}
+[8.627044] (-) TimerEvent: {}
+[8.652640] (arm_description) JobEnded: {'identifier': 'arm_description', 'rc': 0}
+[8.728737] (-) TimerEvent: {}
+[8.830428] (-) TimerEvent: {}
+[8.919799] (arm_2026) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.931936] (-) TimerEvent: {}
+[9.019875] (arm_2026) StdoutLine: {'line': b'-- Generating done\n'}
+[9.032589] (-) TimerEvent: {}
+[9.042954] (arm_2026) StdoutLine: {'line': b'-- Build files have been written to: /home/rida/fakescience/build/arm_2026\n'}
+[9.073235] (arm_2026) CommandEnded: {'returncode': 0}
+[9.074268] (arm_2026) JobProgress: {'identifier': 'arm_2026', 'progress': 'build'}
+[9.074332] (arm_2026) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rida/fakescience/build/arm_2026', '--', '-j3', '-l3'], 'cwd': '/home/rida/fakescience/build/arm_2026', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_2026'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[9.134525] (-) TimerEvent: {}
+[9.235261] (-) TimerEvent: {}
+[9.308459] (arm_2026) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/arm_2026_joystick_teleop.dir/arm_2026/joystick_teleop.cpp.o\x1b[0m\n'}
+[9.337529] (-) TimerEvent: {}
+[9.353454] (arm_2026) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/arm_2026.dir/src/arm_2026_system.cpp.o\x1b[0m\n'}
+[9.385245] (arm_2026) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/arm_2026_keyboard_teleop.dir/arm_2026/keyboard_teleop.cpp.o\x1b[0m\n'}
+[9.438405] (-) TimerEvent: {}
+[9.539333] (-) TimerEvent: {}
+[9.641056] (-) TimerEvent: {}
+[9.744602] (-) TimerEvent: {}
+[9.848604] (-) TimerEvent: {}
+[9.949832] (-) TimerEvent: {}
+[10.050995] (-) TimerEvent: {}
+[10.152202] (-) TimerEvent: {}
+[10.255095] (-) TimerEvent: {}
+[10.356529] (-) TimerEvent: {}
+[10.459305] (-) TimerEvent: {}
+[10.562117] (-) TimerEvent: {}
+[10.663368] (-) TimerEvent: {}
+[10.764143] (-) TimerEvent: {}
+[10.865720] (-) TimerEvent: {}
+[10.967415] (-) TimerEvent: {}
+[11.070127] (-) TimerEvent: {}
+[11.171246] (-) TimerEvent: {}
+[11.273845] (-) TimerEvent: {}
+[11.375505] (-) TimerEvent: {}
+[11.480349] (-) TimerEvent: {}
+[11.581171] (-) TimerEvent: {}
+[11.682564] (-) TimerEvent: {}
+[11.784439] (-) TimerEvent: {}
+[11.889434] (-) TimerEvent: {}
+[11.990430] (-) TimerEvent: {}
+[12.091246] (-) TimerEvent: {}
+[12.193803] (-) TimerEvent: {}
+[12.294396] (-) TimerEvent: {}
+[12.397312] (-) TimerEvent: {}
+[12.498357] (-) TimerEvent: {}
+[12.601539] (-) TimerEvent: {}
+[12.702284] (-) TimerEvent: {}
+[12.802966] (-) TimerEvent: {}
+[12.906256] (-) TimerEvent: {}
+[13.007328] (-) TimerEvent: {}
+[13.108093] (-) TimerEvent: {}
+[13.210808] (-) TimerEvent: {}
+[13.312055] (-) TimerEvent: {}
+[13.415393] (-) TimerEvent: {}
+[13.516527] (-) TimerEvent: {}
+[13.617797] (-) TimerEvent: {}
+[13.718468] (-) TimerEvent: {}
+[13.821596] (-) TimerEvent: {}
+[13.925652] (-) TimerEvent: {}
+[14.026978] (-) TimerEvent: {}
+[14.127910] (-) TimerEvent: {}
+[14.231672] (-) TimerEvent: {}
+[14.332324] (-) TimerEvent: {}
+[14.432988] (-) TimerEvent: {}
+[14.538582] (-) TimerEvent: {}
+[14.640614] (-) TimerEvent: {}
+[14.742462] (-) TimerEvent: {}
+[14.844037] (-) TimerEvent: {}
+[14.947826] (-) TimerEvent: {}
+[15.048656] (-) TimerEvent: {}
+[15.152304] (-) TimerEvent: {}
+[15.253579] (-) TimerEvent: {}
+[15.355396] (-) TimerEvent: {}
+[15.459234] (-) TimerEvent: {}
+[15.560255] (-) TimerEvent: {}
+[15.663403] (-) TimerEvent: {}
+[15.763988] (-) TimerEvent: {}
+[15.867465] (-) TimerEvent: {}
+[15.969519] (-) TimerEvent: {}
+[16.073277] (-) TimerEvent: {}
+[16.173979] (-) TimerEvent: {}
+[16.275866] (-) TimerEvent: {}
+[16.378427] (-) TimerEvent: {}
+[16.479505] (-) TimerEvent: {}
+[16.582610] (-) TimerEvent: {}
+[16.683450] (-) TimerEvent: {}
+[16.785657] (-) TimerEvent: {}
+[16.886715] (-) TimerEvent: {}
+[16.989216] (-) TimerEvent: {}
+[17.090163] (-) TimerEvent: {}
+[17.193571] (-) TimerEvent: {}
+[17.294348] (-) TimerEvent: {}
+[17.396902] (-) TimerEvent: {}
+[17.504171] (-) TimerEvent: {}
+[17.605175] (-) TimerEvent: {}
+[17.706369] (-) TimerEvent: {}
+[17.809045] (-) TimerEvent: {}
+[17.910166] (-) TimerEvent: {}
+[18.011332] (-) TimerEvent: {}
+[18.112146] (-) TimerEvent: {}
+[18.216266] (-) TimerEvent: {}
+[18.317410] (-) TimerEvent: {}
+[18.420675] (-) TimerEvent: {}
+[18.522047] (-) TimerEvent: {}
+[18.625967] (-) TimerEvent: {}
+[18.727770] (-) TimerEvent: {}
+[18.830589] (-) TimerEvent: {}
+[18.931621] (-) TimerEvent: {}
+[19.036578] (-) TimerEvent: {}
+[19.137475] (-) TimerEvent: {}
+[19.240471] (-) TimerEvent: {}
+[19.340907] (-) TimerEvent: {}
+[19.442223] (-) TimerEvent: {}
+[19.544158] (-) TimerEvent: {}
+[19.646407] (-) TimerEvent: {}
+[19.747799] (-) TimerEvent: {}
+[19.849634] (-) TimerEvent: {}
+[19.954146] (-) TimerEvent: {}
+[20.055160] (-) TimerEvent: {}
+[20.156536] (-) TimerEvent: {}
+[20.259266] (-) TimerEvent: {}
+[20.362458] (-) TimerEvent: {}
+[20.463513] (-) TimerEvent: {}
+[20.564666] (-) TimerEvent: {}
+[20.665671] (-) TimerEvent: {}
+[20.768418] (-) TimerEvent: {}
+[20.869843] (-) TimerEvent: {}
+[20.972652] (-) TimerEvent: {}
+[21.074971] (-) TimerEvent: {}
+[21.178195] (-) TimerEvent: {}
+[21.279724] (-) TimerEvent: {}
+[21.381028] (-) TimerEvent: {}
+[21.484169] (-) TimerEvent: {}
+[21.586511] (-) TimerEvent: {}
+[21.690095] (-) TimerEvent: {}
+[21.791337] (-) TimerEvent: {}
+[21.892266] (-) TimerEvent: {}
+[21.996557] (-) TimerEvent: {}
+[22.099242] (-) TimerEvent: {}
+[22.202815] (-) TimerEvent: {}
+[22.303520] (-) TimerEvent: {}
+[22.407476] (-) TimerEvent: {}
+[22.508151] (-) TimerEvent: {}
+[22.612556] (-) TimerEvent: {}
+[22.713366] (-) TimerEvent: {}
+[22.814264] (-) TimerEvent: {}
+[22.917438] (-) TimerEvent: {}
+[23.018372] (-) TimerEvent: {}
+[23.121795] (-) TimerEvent: {}
+[23.222839] (-) TimerEvent: {}
+[23.323716] (-) TimerEvent: {}
+[23.427519] (-) TimerEvent: {}
+[23.528584] (-) TimerEvent: {}
+[23.632536] (-) TimerEvent: {}
+[23.733390] (-) TimerEvent: {}
+[23.834327] (-) TimerEvent: {}
+[23.936319] (-) TimerEvent: {}
+[24.037647] (-) TimerEvent: {}
+[24.140102] (-) TimerEvent: {}
+[24.240751] (-) TimerEvent: {}
+[24.344000] (-) TimerEvent: {}
+[24.445674] (-) TimerEvent: {}
+[24.549405] (-) TimerEvent: {}
+[24.650542] (-) TimerEvent: {}
+[24.752138] (-) TimerEvent: {}
+[24.853230] (-) TimerEvent: {}
+[24.955551] (-) TimerEvent: {}
+[25.056631] (-) TimerEvent: {}
+[25.159269] (-) TimerEvent: {}
+[25.260225] (-) TimerEvent: {}
+[25.362691] (-) TimerEvent: {}
+[25.470636] (-) TimerEvent: {}
+[25.573064] (-) TimerEvent: {}
+[25.677054] (-) TimerEvent: {}
+[25.778100] (-) TimerEvent: {}
+[25.879623] (-) TimerEvent: {}
+[25.983197] (-) TimerEvent: {}
+[26.084789] (-) TimerEvent: {}
+[26.186134] (-) TimerEvent: {}
+[26.288467] (-) TimerEvent: {}
+[26.389364] (-) TimerEvent: {}
+[26.491307] (-) TimerEvent: {}
+[26.592520] (-) TimerEvent: {}
+[26.694184] (-) TimerEvent: {}
+[26.796665] (-) TimerEvent: {}
+[26.898569] (-) TimerEvent: {}
+[27.000266] (-) TimerEvent: {}
+[27.101976] (-) TimerEvent: {}
+[27.206358] (-) TimerEvent: {}
+[27.307379] (-) TimerEvent: {}
+[27.410404] (-) TimerEvent: {}
+[27.513603] (-) TimerEvent: {}
+[27.617264] (-) TimerEvent: {}
+[27.718219] (-) TimerEvent: {}
+[27.820514] (-) TimerEvent: {}
+[27.922260] (-) TimerEvent: {}
+[28.024318] (-) TimerEvent: {}
+[28.126088] (-) TimerEvent: {}
+[28.230302] (-) TimerEvent: {}
+[28.331212] (-) TimerEvent: {}
+[28.434028] (-) TimerEvent: {}
+[28.534868] (-) TimerEvent: {}
+[28.638254] (-) TimerEvent: {}
+[28.739364] (-) TimerEvent: {}
+[28.840119] (-) TimerEvent: {}
+[28.942417] (-) TimerEvent: {}
+[29.044535] (-) TimerEvent: {}
+[29.146644] (-) TimerEvent: {}
+[29.249400] (-) TimerEvent: {}
+[29.350139] (-) TimerEvent: {}
+[29.453083] (-) TimerEvent: {}
+[29.556109] (-) TimerEvent: {}
+[29.660314] (-) TimerEvent: {}
+[29.761044] (-) TimerEvent: {}
+[29.863468] (-) TimerEvent: {}
+[29.966441] (-) TimerEvent: {}
+[30.067713] (-) TimerEvent: {}
+[30.170898] (-) TimerEvent: {}
+[30.271551] (-) TimerEvent: {}
+[30.375102] (-) TimerEvent: {}
+[30.476182] (-) TimerEvent: {}
+[30.577513] (-) TimerEvent: {}
+[30.678226] (-) TimerEvent: {}
+[30.778853] (-) TimerEvent: {}
+[30.882016] (-) TimerEvent: {}
+[30.985423] (-) TimerEvent: {}
+[31.086865] (-) TimerEvent: {}
+[31.188153] (-) TimerEvent: {}
+[31.291169] (-) TimerEvent: {}
+[31.392525] (-) TimerEvent: {}
+[31.496253] (-) TimerEvent: {}
+[31.598368] (-) TimerEvent: {}
+[31.701600] (-) TimerEvent: {}
+[31.802159] (-) TimerEvent: {}
+[31.903254] (-) TimerEvent: {}
+[32.004267] (-) TimerEvent: {}
+[32.106355] (-) TimerEvent: {}
+[32.207258] (-) TimerEvent: {}
+[32.310597] (-) TimerEvent: {}
+[32.411226] (-) TimerEvent: {}
+[32.514670] (-) TimerEvent: {}
+[32.618614] (-) TimerEvent: {}
+[32.719536] (-) TimerEvent: {}
+[32.820261] (-) TimerEvent: {}
+[32.921381] (-) TimerEvent: {}
+[33.024347] (-) TimerEvent: {}
+[33.125121] (-) TimerEvent: {}
+[33.229358] (-) TimerEvent: {}
+[33.330457] (-) TimerEvent: {}
+[33.431199] (-) TimerEvent: {}
+[33.531929] (-) TimerEvent: {}
+[33.633766] (-) TimerEvent: {}
+[33.738433] (-) TimerEvent: {}
+[33.839971] (-) TimerEvent: {}
+[33.942966] (-) TimerEvent: {}
+[34.044151] (-) TimerEvent: {}
+[34.145196] (-) TimerEvent: {}
+[34.247223] (-) TimerEvent: {}
+[34.348562] (-) TimerEvent: {}
+[34.455644] (-) TimerEvent: {}
+[34.563232] (-) TimerEvent: {}
+[34.664469] (-) TimerEvent: {}
+[34.770131] (-) TimerEvent: {}
+[34.874010] (-) TimerEvent: {}
+[34.975309] (-) TimerEvent: {}
+[35.077175] (-) TimerEvent: {}
+[35.179381] (-) TimerEvent: {}
+[35.281476] (-) TimerEvent: {}
+[35.383560] (-) TimerEvent: {}
+[35.484535] (-) TimerEvent: {}
+[35.585752] (-) TimerEvent: {}
+[35.688244] (-) TimerEvent: {}
+[35.791432] (-) TimerEvent: {}
+[35.892012] (-) TimerEvent: {}
+[35.995105] (-) TimerEvent: {}
+[36.098037] (-) TimerEvent: {}
+[36.202358] (-) TimerEvent: {}
+[36.307575] (-) TimerEvent: {}
+[36.408303] (-) TimerEvent: {}
+[36.509319] (-) TimerEvent: {}
+[36.610471] (-) TimerEvent: {}
+[36.714163] (-) TimerEvent: {}
+[36.816000] (-) TimerEvent: {}
+[36.917338] (-) TimerEvent: {}
+[37.020215] (-) TimerEvent: {}
+[37.121303] (-) TimerEvent: {}
+[37.222396] (-) TimerEvent: {}
+[37.325142] (-) TimerEvent: {}
+[37.425933] (-) TimerEvent: {}
+[37.528975] (-) TimerEvent: {}
+[37.630059] (-) TimerEvent: {}
+[37.732056] (-) TimerEvent: {}
+[37.757392] (arm_2026) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libarm_2026.so\x1b[0m\n'}
+[37.832514] (-) TimerEvent: {}
+[37.935290] (-) TimerEvent: {}
+[38.036049] (-) TimerEvent: {}
+[38.137144] (-) TimerEvent: {}
+[38.238319] (-) TimerEvent: {}
+[38.340895] (-) TimerEvent: {}
+[38.441954] (-) TimerEvent: {}
+[38.544485] (-) TimerEvent: {}
+[38.645044] (-) TimerEvent: {}
+[38.746436] (-) TimerEvent: {}
+[38.850170] (-) TimerEvent: {}
+[38.950992] (-) TimerEvent: {}
+[39.051910] (-) TimerEvent: {}
+[39.154305] (-) TimerEvent: {}
+[39.256168] (-) TimerEvent: {}
+[39.358536] (-) TimerEvent: {}
+[39.459589] (-) TimerEvent: {}
+[39.560422] (-) TimerEvent: {}
+[39.623059] (arm_2026) StdoutLine: {'line': b'[ 66%] Built target arm_2026\n'}
+[39.661067] (-) TimerEvent: {}
+[39.762485] (-) TimerEvent: {}
+[39.865568] (-) TimerEvent: {}
+[39.966230] (-) TimerEvent: {}
+[40.067330] (-) TimerEvent: {}
+[40.167912] (-) TimerEvent: {}
+[40.268952] (-) TimerEvent: {}
+[40.370950] (-) TimerEvent: {}
+[40.472171] (-) TimerEvent: {}
+[40.575366] (-) TimerEvent: {}
+[40.676260] (-) TimerEvent: {}
+[40.776985] (-) TimerEvent: {}
+[40.877765] (-) TimerEvent: {}
+[40.980429] (-) TimerEvent: {}
+[41.081128] (-) TimerEvent: {}
+[41.182537] (-) TimerEvent: {}
+[41.284202] (-) TimerEvent: {}
+[41.384957] (-) TimerEvent: {}
+[41.488070] (-) TimerEvent: {}
+[41.589386] (-) TimerEvent: {}
+[41.690559] (-) TimerEvent: {}
+[41.793166] (-) TimerEvent: {}
+[41.893900] (-) TimerEvent: {}
+[41.997515] (-) TimerEvent: {}
+[42.100115] (-) TimerEvent: {}
+[42.202576] (-) TimerEvent: {}
+[42.303440] (-) TimerEvent: {}
+[42.325369] (arm_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libarm_control.so\x1b[0m\n'}
+[42.403932] (-) TimerEvent: {}
+[42.506197] (-) TimerEvent: {}
+[42.607237] (-) TimerEvent: {}
+[42.708324] (-) TimerEvent: {}
+[42.810041] (-) TimerEvent: {}
+[42.912069] (-) TimerEvent: {}
+[42.984078] (arm_control) StdoutLine: {'line': b'[100%] Built target arm_control\n'}
+[43.012366] (-) TimerEvent: {}
+[43.025993] (arm_control) CommandEnded: {'returncode': 0}
+[43.026590] (arm_control) JobProgress: {'identifier': 'arm_control', 'progress': 'install'}
+[43.029777] (arm_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rida/fakescience/build/arm_control'], 'cwd': '/home/rida/fakescience/build/arm_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_control'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[43.066782] (arm_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[43.068254] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/plugin.xml\n'}
+[43.069259] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/lib/libarm_control.so\n'}
+[43.079583] (arm_control) StdoutLine: {'line': b'-- Set runtime path of "/home/rida/fakescience/install/arm_control/lib/libarm_control.so" to ""\n'}
+[43.079842] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/include\n'}
+[43.079967] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/include/arm_control\n'}
+[43.080077] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/include/arm_control/mini_arm_hardware.hpp\n'}
+[43.081046] (arm_control) StdoutLine: {'line': b'-- Up-to-date: /home/rida/fakescience/install/arm_control/share/arm_control/plugin.xml\n'}
+[43.081417] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/config\n'}
+[43.082232] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/config/controllers.yaml\n'}
+[43.083480] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/lib/arm_control/keyboard_teleop.py\n'}
+[43.085386] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/lib/arm_control/keyboard_cartesian_ik_teleop.py\n'}
+[43.087012] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/lib/arm_control/ps5_arm_teleop.py\n'}
+[43.088577] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/lib/arm_control/ps5_cartesian_ik_teleop.py\n'}
+[43.090925] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/lib/arm_control/logitech_joystick_ik.py\n'}
+[43.092569] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/lib/arm_control/joint_state_offset.py\n'}
+[43.094433] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/ament_index/resource_index/package_run_dependencies/arm_control\n'}
+[43.095513] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/ament_index/resource_index/parent_prefix_path/arm_control\n'}
+[43.097369] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/environment/ament_prefix_path.sh\n'}
+[43.097850] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/environment/ament_prefix_path.dsv\n'}
+[43.099003] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/environment/path.sh\n'}
+[43.100171] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/environment/path.dsv\n'}
+[43.101273] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/local_setup.bash\n'}
+[43.102226] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/local_setup.sh\n'}
+[43.103532] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/local_setup.zsh\n'}
+[43.104715] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/local_setup.dsv\n'}
+[43.106178] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/package.dsv\n'}
+[43.108018] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/ament_index/resource_index/packages/arm_control\n'}
+[43.108533] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/arm_control\n'}
+[43.109624] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/cmake/arm_controlConfig.cmake\n'}
+[43.110702] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/cmake/arm_controlConfig-version.cmake\n'}
+[43.111669] (arm_control) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_control/share/arm_control/package.xml\n'}
+[43.114068] (-) TimerEvent: {}
+[43.119077] (arm_control) CommandEnded: {'returncode': 0}
+[43.172567] (arm_control) JobEnded: {'identifier': 'arm_control', 'rc': 0}
+[43.216147] (-) TimerEvent: {}
+[43.317169] (-) TimerEvent: {}
+[43.418111] (-) TimerEvent: {}
+[43.519332] (-) TimerEvent: {}
+[43.620290] (-) TimerEvent: {}
+[43.722320] (-) TimerEvent: {}
+[43.823268] (-) TimerEvent: {}
+[43.924353] (-) TimerEvent: {}
+[44.025335] (-) TimerEvent: {}
+[44.126414] (-) TimerEvent: {}
+[44.227677] (-) TimerEvent: {}
+[44.328932] (-) TimerEvent: {}
+[44.430571] (-) TimerEvent: {}
+[44.531685] (-) TimerEvent: {}
+[44.632317] (-) TimerEvent: {}
+[44.733295] (-) TimerEvent: {}
+[44.833993] (-) TimerEvent: {}
+[44.935180] (-) TimerEvent: {}
+[45.036203] (-) TimerEvent: {}
+[45.137349] (-) TimerEvent: {}
+[45.238383] (-) TimerEvent: {}
+[45.339365] (-) TimerEvent: {}
+[45.440390] (-) TimerEvent: {}
+[45.541429] (-) TimerEvent: {}
+[45.642347] (-) TimerEvent: {}
+[45.743479] (-) TimerEvent: {}
+[45.845248] (-) TimerEvent: {}
+[45.947242] (-) TimerEvent: {}
+[46.048513] (-) TimerEvent: {}
+[46.150077] (-) TimerEvent: {}
+[46.251339] (-) TimerEvent: {}
+[46.352459] (-) TimerEvent: {}
+[46.453561] (-) TimerEvent: {}
+[46.555263] (-) TimerEvent: {}
+[46.656301] (-) TimerEvent: {}
+[46.756907] (-) TimerEvent: {}
+[46.857775] (-) TimerEvent: {}
+[46.958580] (-) TimerEvent: {}
+[47.059482] (-) TimerEvent: {}
+[47.160848] (-) TimerEvent: {}
+[47.262161] (-) TimerEvent: {}
+[47.362866] (-) TimerEvent: {}
+[47.464223] (-) TimerEvent: {}
+[47.565454] (-) TimerEvent: {}
+[47.666067] (-) TimerEvent: {}
+[47.766882] (-) TimerEvent: {}
+[47.867717] (-) TimerEvent: {}
+[47.968897] (-) TimerEvent: {}
+[48.069675] (-) TimerEvent: {}
+[48.170827] (-) TimerEvent: {}
+[48.271712] (-) TimerEvent: {}
+[48.372673] (-) TimerEvent: {}
+[48.474292] (-) TimerEvent: {}
+[48.575224] (-) TimerEvent: {}
+[48.676328] (-) TimerEvent: {}
+[48.777381] (-) TimerEvent: {}
+[48.878353] (-) TimerEvent: {}
+[48.979643] (-) TimerEvent: {}
+[49.080747] (-) TimerEvent: {}
+[49.181464] (-) TimerEvent: {}
+[49.282900] (-) TimerEvent: {}
+[49.384271] (-) TimerEvent: {}
+[49.485422] (-) TimerEvent: {}
+[49.586547] (-) TimerEvent: {}
+[49.687566] (-) TimerEvent: {}
+[49.788930] (-) TimerEvent: {}
+[49.890414] (-) TimerEvent: {}
+[49.991482] (-) TimerEvent: {}
+[50.092586] (-) TimerEvent: {}
+[50.193242] (-) TimerEvent: {}
+[50.294022] (-) TimerEvent: {}
+[50.395129] (-) TimerEvent: {}
+[50.497878] (-) TimerEvent: {}
+[50.600090] (-) TimerEvent: {}
+[50.701319] (-) TimerEvent: {}
+[50.801815] (-) TimerEvent: {}
+[50.903278] (-) TimerEvent: {}
+[51.004445] (-) TimerEvent: {}
+[51.106834] (-) TimerEvent: {}
+[51.208231] (-) TimerEvent: {}
+[51.309325] (-) TimerEvent: {}
+[51.410908] (-) TimerEvent: {}
+[51.512315] (-) TimerEvent: {}
+[51.613365] (-) TimerEvent: {}
+[51.714366] (-) TimerEvent: {}
+[51.815670] (-) TimerEvent: {}
+[51.916781] (-) TimerEvent: {}
+[52.017611] (-) TimerEvent: {}
+[52.042220] (arm_2026) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable arm_2026_keyboard_teleop\x1b[0m\n'}
+[52.118676] (-) TimerEvent: {}
+[52.220815] (-) TimerEvent: {}
+[52.322388] (-) TimerEvent: {}
+[52.423991] (-) TimerEvent: {}
+[52.525188] (-) TimerEvent: {}
+[52.626581] (-) TimerEvent: {}
+[52.727445] (-) TimerEvent: {}
+[52.829758] (-) TimerEvent: {}
+[52.932117] (-) TimerEvent: {}
+[53.033056] (-) TimerEvent: {}
+[53.134154] (-) TimerEvent: {}
+[53.148071] (arm_2026) StdoutLine: {'line': b'[ 83%] Built target arm_2026_keyboard_teleop\n'}
+[53.234649] (-) TimerEvent: {}
+[53.335661] (-) TimerEvent: {}
+[53.436861] (-) TimerEvent: {}
+[53.538120] (-) TimerEvent: {}
+[53.639298] (-) TimerEvent: {}
+[53.740583] (-) TimerEvent: {}
+[53.841484] (-) TimerEvent: {}
+[53.942280] (-) TimerEvent: {}
+[54.043171] (-) TimerEvent: {}
+[54.144252] (-) TimerEvent: {}
+[54.245281] (-) TimerEvent: {}
+[54.346264] (-) TimerEvent: {}
+[54.447494] (-) TimerEvent: {}
+[54.548299] (-) TimerEvent: {}
+[54.649281] (-) TimerEvent: {}
+[54.750099] (-) TimerEvent: {}
+[54.850749] (-) TimerEvent: {}
+[54.951601] (-) TimerEvent: {}
+[55.052984] (-) TimerEvent: {}
+[55.153869] (-) TimerEvent: {}
+[55.254854] (-) TimerEvent: {}
+[55.356076] (-) TimerEvent: {}
+[55.457498] (-) TimerEvent: {}
+[55.558817] (-) TimerEvent: {}
+[55.660118] (-) TimerEvent: {}
+[55.761489] (-) TimerEvent: {}
+[55.862220] (-) TimerEvent: {}
+[55.963272] (-) TimerEvent: {}
+[56.064162] (-) TimerEvent: {}
+[56.164835] (-) TimerEvent: {}
+[56.266099] (-) TimerEvent: {}
+[56.367004] (-) TimerEvent: {}
+[56.468206] (-) TimerEvent: {}
+[56.568932] (-) TimerEvent: {}
+[56.670125] (-) TimerEvent: {}
+[56.771000] (-) TimerEvent: {}
+[56.872455] (-) TimerEvent: {}
+[56.973827] (-) TimerEvent: {}
+[57.074861] (-) TimerEvent: {}
+[57.176129] (-) TimerEvent: {}
+[57.277255] (-) TimerEvent: {}
+[57.378226] (-) TimerEvent: {}
+[57.479908] (-) TimerEvent: {}
+[57.581139] (-) TimerEvent: {}
+[57.682094] (-) TimerEvent: {}
+[57.783248] (-) TimerEvent: {}
+[57.884256] (-) TimerEvent: {}
+[57.985176] (-) TimerEvent: {}
+[58.086194] (-) TimerEvent: {}
+[58.187484] (-) TimerEvent: {}
+[58.288614] (-) TimerEvent: {}
+[58.389615] (-) TimerEvent: {}
+[58.491151] (-) TimerEvent: {}
+[58.592274] (-) TimerEvent: {}
+[58.693207] (-) TimerEvent: {}
+[58.793936] (-) TimerEvent: {}
+[58.894734] (-) TimerEvent: {}
+[58.996491] (-) TimerEvent: {}
+[59.097462] (-) TimerEvent: {}
+[59.198590] (-) TimerEvent: {}
+[59.299618] (-) TimerEvent: {}
+[59.400971] (-) TimerEvent: {}
+[59.502172] (-) TimerEvent: {}
+[59.603232] (-) TimerEvent: {}
+[59.704051] (-) TimerEvent: {}
+[59.715584] (arm_2026) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable arm_2026_joystick_teleop\x1b[0m\n'}
+[59.805024] (-) TimerEvent: {}
+[59.905947] (-) TimerEvent: {}
+[60.007058] (-) TimerEvent: {}
+[60.107927] (-) TimerEvent: {}
+[60.208692] (-) TimerEvent: {}
+[60.309963] (-) TimerEvent: {}
+[60.411020] (-) TimerEvent: {}
+[60.512176] (-) TimerEvent: {}
+[60.613545] (-) TimerEvent: {}
+[60.715283] (-) TimerEvent: {}
+[60.816388] (-) TimerEvent: {}
+[60.917656] (-) TimerEvent: {}
+[61.018455] (-) TimerEvent: {}
+[61.020588] (arm_2026) StdoutLine: {'line': b'[100%] Built target arm_2026_joystick_teleop\n'}
+[61.061613] (arm_2026) CommandEnded: {'returncode': 0}
+[61.062984] (arm_2026) JobProgress: {'identifier': 'arm_2026', 'progress': 'install'}
+[61.067343] (arm_2026) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rida/fakescience/build/arm_2026'], 'cwd': '/home/rida/fakescience/build/arm_2026', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'rida'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware/lib:/home/rida/ros2control/install/transmission_interface/lib:/home/rida/ros2control/install/hardware_interface_testing/lib:/home/rida/ros2control/install/controller_manager/lib:/home/rida/ros2control/install/ros2_control_test_assets/lib:/home/rida/ros2control/install/joint_limits/lib:/home/rida/ros2control/install/controller_interface/lib:/home/rida/ros2control/install/hardware_interface/lib:/home/rida/ros2control/install/controller_manager_msgs/lib:/home/rida/ros2_ws/install/lib:/opt/ros/humble/opt/zenoh_cpp_vendor/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/opt/libphidget22/lib:/opt/ros/humble/lib'), ('HOME', '/home/rida'), ('OLDPWD', '/home/rida/fakescience/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2025'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/rida/asimov_ws/install:/home/rida/asimov_ws Rida Test/install:/home/rida/ros2_ws/install:/home/rida/ros2control/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rida'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rida'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rida/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/rida-virtual-machine:@/tmp/.ICE-unix/1995,unix/rida-virtual-machine:/tmp/.ICE-unix/1995'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/45866386_0949_425f_9fd4_03f1398a6633'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3CDGS3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '42'), ('AMENT_PREFIX_PATH', '/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rida/fakescience/build/arm_2026'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rida/asimov_ws/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws/install/drive_control/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/rover_dashboard/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_bringup/lib/python3.10/site-packages:/home/rida/asimov_ws Rida Test/install/drive_control/lib/python3.10/site-packages:/home/rida/ros2control/install/rqt_controller_manager/lib/python3.10/site-packages:/home/rida/ros2control/install/ros2controlcli/lib/python3.10/site-packages:/home/rida/ros2control/install/controller_manager/local/lib/python3.10/dist-packages:/home/rida/ros2control/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rida/asimov_ws Rida Test/install/phidgets_hardware:/home/rida/asimov_ws Rida Test/install/drive_description:/home/rida/ros2control/install/ros2_control:/home/rida/ros2control/install/transmission_interface:/home/rida/ros2control/install/new_config:/home/rida/ros2control/install/hardware_interface_testing:/home/rida/ros2control/install/controller_manager:/home/rida/ros2control/install/ros2_control_test_assets:/home/rida/ros2control/install/my_robot_description:/home/rida/ros2control/install/joint_limits:/home/rida/ros2control/install/controller_interface:/home/rida/ros2control/install/hardware_interface:/home/rida/ros2control/install/controller_manager_msgs:/home/rida/ros2control/install/arm_urdf:/home/rida/ros2control/install/ASIMOV_FINAL_2:/home/rida/ros2_ws/install:/home/rida/ros2control/src/ASIMOV_FINAL_2/install/ASIMOV_FINAL_2:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble')]), 'shell': False}
+[61.091350] (arm_2026) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[61.091914] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/plugin.xml\n'}
+[61.093410] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/include\n'}
+[61.093955] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/include/arm_2026\n'}
+[61.094112] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/include/arm_2026/arm_2026_system.hpp\n'}
+[61.095208] (arm_2026) StdoutLine: {'line': b'-- Up-to-date: /home/rida/fakescience/install/arm_2026/share/arm_2026/plugin.xml\n'}
+[61.095421] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/lib/libarm_2026.so\n'}
+[61.098227] (arm_2026) StdoutLine: {'line': b'-- Set runtime path of "/home/rida/fakescience/install/arm_2026/lib/libarm_2026.so" to ""\n'}
+[61.098421] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/lib/arm_2026/arm_2026_keyboard_teleop\n'}
+[61.110593] (arm_2026) StdoutLine: {'line': b'-- Set runtime path of "/home/rida/fakescience/install/arm_2026/lib/arm_2026/arm_2026_keyboard_teleop" to ""\n'}
+[61.110858] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/lib/arm_2026/arm_2026_joystick_teleop\n'}
+[61.119078] (-) TimerEvent: {}
+[61.127915] (arm_2026) StdoutLine: {'line': b'-- Set runtime path of "/home/rida/fakescience/install/arm_2026/lib/arm_2026/arm_2026_joystick_teleop" to ""\n'}
+[61.128178] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/description\n'}
+[61.129173] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/description/arm_2026_final.urdf\n'}
+[61.130490] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/description/arm_2026.urdf.xacro\n'}
+[61.132160] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/config\n'}
+[61.132815] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/config/controllers.yaml\n'}
+[61.134266] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/launch\n'}
+[61.135458] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/launch/bringup.launch.py\n'}
+[61.136640] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/launch/view_arm_final.launch.py\n'}
+[61.137736] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/meshes\n'}
+[61.138760] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/meshes/link_1.STL\n'}
+[61.142568] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/meshes/base_link.STL\n'}
+[61.149218] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/meshes/end_effector.STL\n'}
+[61.181792] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/meshes/link_4.STL\n'}
+[61.202987] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/meshes/link_3.STL\n'}
+[61.219874] (-) TimerEvent: {}
+[61.225110] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/meshes/link_2.STL\n'}
+[61.228501] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/environment/library_path.sh\n'}
+[61.229273] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/environment/library_path.dsv\n'}
+[61.230188] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/ament_index/resource_index/package_run_dependencies/arm_2026\n'}
+[61.231069] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/ament_index/resource_index/parent_prefix_path/arm_2026\n'}
+[61.231374] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/environment/ament_prefix_path.sh\n'}
+[61.231976] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/environment/ament_prefix_path.dsv\n'}
+[61.232502] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/environment/path.sh\n'}
+[61.232970] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/environment/path.dsv\n'}
+[61.233940] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/local_setup.bash\n'}
+[61.234919] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/local_setup.sh\n'}
+[61.235568] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/local_setup.zsh\n'}
+[61.236262] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/local_setup.dsv\n'}
+[61.236986] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/package.dsv\n'}
+[61.237410] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/ament_index/resource_index/packages/arm_2026\n'}
+[61.239114] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/arm_2026\n'}
+[61.240521] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/cmake/export_arm_2026Export.cmake\n'}
+[61.241405] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/cmake/export_arm_2026Export-noconfig.cmake\n'}
+[61.242132] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[61.242526] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[61.242957] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/cmake/arm_2026Config.cmake\n'}
+[61.243603] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/cmake/arm_2026Config-version.cmake\n'}
+[61.244458] (arm_2026) StdoutLine: {'line': b'-- Installing: /home/rida/fakescience/install/arm_2026/share/arm_2026/package.xml\n'}
+[61.253020] (arm_2026) CommandEnded: {'returncode': 0}
+[61.294031] (arm_2026) JobEnded: {'identifier': 'arm_2026', 'rc': 0}
+[61.296828] (-) EventReactorShutdown: {}

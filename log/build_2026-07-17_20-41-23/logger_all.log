@@ -1,0 +1,380 @@
+[1.167s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.167s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=3, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c185f988400>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c185f95ba00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c185f95ba00>>, mixin_verb=('build',))
+[2.187s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.188s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.188s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/rida/fakescience'
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.190s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.228s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extensions ['ignore', 'ignore_ament_install']
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extension 'ignore'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extension 'ignore_ament_install'
+[2.229s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extensions ['colcon_pkg']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extension 'colcon_pkg'
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extensions ['colcon_meta']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extension 'colcon_meta'
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extensions ['ros']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extension 'ros'
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extensions ['cmake', 'python']
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extension 'cmake'
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extension 'python'
+[2.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extensions ['python_setup_py']
+[2.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm) by extension 'python_setup_py'
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/build) by extensions ['ignore', 'ignore_ament_install']
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/build) by extension 'ignore'
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/build) ignored
+[2.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/install) by extensions ['ignore', 'ignore_ament_install']
+[2.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/install) by extension 'ignore'
+[2.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/install) ignored
+[2.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/log) by extensions ['ignore', 'ignore_ament_install']
+[2.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/log) by extension 'ignore'
+[2.236s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/log) ignored
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extensions ['ignore', 'ignore_ament_install']
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extension 'ignore'
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extension 'ignore_ament_install'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extensions ['colcon_pkg']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extension 'colcon_pkg'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extensions ['colcon_meta']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extension 'colcon_meta'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extensions ['ros']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extension 'ros'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extensions ['cmake', 'python']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extension 'cmake'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extension 'python'
+[2.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extensions ['python_setup_py']
+[2.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src) by extension 'python_setup_py'
+[2.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extensions ['ignore', 'ignore_ament_install']
+[2.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extension 'ignore'
+[2.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extension 'ignore_ament_install'
+[2.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extensions ['colcon_pkg']
+[2.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extension 'colcon_pkg'
+[2.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extensions ['colcon_meta']
+[2.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extension 'colcon_meta'
+[2.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extensions ['ros']
+[2.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_2026) by extension 'ros'
+[2.255s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tasc_arm/src/arm_2026' with type 'ros.ament_cmake' and name 'arm_2026'
+[2.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extensions ['ignore', 'ignore_ament_install']
+[2.256s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extension 'ignore'
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extension 'ignore_ament_install'
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extensions ['colcon_pkg']
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extension 'colcon_pkg'
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extensions ['colcon_meta']
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extension 'colcon_meta'
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extensions ['ros']
+[2.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_bringup) by extension 'ros'
+[2.260s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tasc_arm/src/arm_bringup' with type 'ros.ament_python' and name 'arm_bringup'
+[2.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extensions ['ignore', 'ignore_ament_install']
+[2.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extension 'ignore'
+[2.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extension 'ignore_ament_install'
+[2.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extensions ['colcon_pkg']
+[2.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extension 'colcon_pkg'
+[2.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extensions ['colcon_meta']
+[2.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extension 'colcon_meta'
+[2.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extensions ['ros']
+[2.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_control) by extension 'ros'
+[2.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tasc_arm/src/arm_control' with type 'ros.ament_cmake' and name 'arm_control'
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extensions ['ignore', 'ignore_ament_install']
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extension 'ignore'
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extension 'ignore_ament_install'
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extensions ['colcon_pkg']
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extension 'colcon_pkg'
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extensions ['colcon_meta']
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extension 'colcon_meta'
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extensions ['ros']
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/tasc_arm/src/arm_description) by extension 'ros'
+[2.274s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tasc_arm/src/arm_description' with type 'ros.ament_cmake' and name 'arm_description'
+[2.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.395s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.414s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/rida/asimov_ws/install
+[2.415s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/rida/asimov_ws Rida Test/install
+[2.422s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 17 installed packages in /home/rida/ros2_ws/install
+[2.424s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/rida/ros2control/install
+[2.425s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/rida/ros2control/src/ASIMOV_FINAL_2/install
+[2.429s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 382 installed packages in /opt/ros/humble
+[2.434s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'cmake_args' from command line to 'None'
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'cmake_target' from command line to 'None'
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'cmake_clean_cache' from command line to 'False'
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'cmake_clean_first' from command line to 'False'
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'cmake_force_configure' from command line to 'False'
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'ament_cmake_args' from command line to 'None'
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'catkin_cmake_args' from command line to 'None'
+[2.689s] Level 5:colcon.colcon_core.verb:set package 'arm_2026' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.689s] DEBUG:colcon.colcon_core.verb:Building package 'arm_2026' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rida/fakescience/build/arm_2026', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rida/fakescience/install/arm_2026', 'merge_install': False, 'path': '/home/rida/fakescience/src/tasc_arm/src/arm_2026', 'symlink_install': False, 'test_result_base': None}
+[2.690s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'cmake_args' from command line to 'None'
+[2.690s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'cmake_target' from command line to 'None'
+[2.690s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.690s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[2.690s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[2.690s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[2.690s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[2.691s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[2.691s] Level 5:colcon.colcon_core.verb:set package 'arm_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.691s] DEBUG:colcon.colcon_core.verb:Building package 'arm_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rida/fakescience/build/arm_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rida/fakescience/install/arm_bringup', 'merge_install': False, 'path': '/home/rida/fakescience/src/tasc_arm/src/arm_bringup', 'symlink_install': False, 'test_result_base': None}
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_args' from command line to 'None'
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_target' from command line to 'None'
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_clean_cache' from command line to 'False'
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_clean_first' from command line to 'False'
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'cmake_force_configure' from command line to 'False'
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'ament_cmake_args' from command line to 'None'
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'catkin_cmake_args' from command line to 'None'
+[2.692s] Level 5:colcon.colcon_core.verb:set package 'arm_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.692s] DEBUG:colcon.colcon_core.verb:Building package 'arm_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rida/fakescience/build/arm_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rida/fakescience/install/arm_control', 'merge_install': False, 'path': '/home/rida/fakescience/src/tasc_arm/src/arm_control', 'symlink_install': False, 'test_result_base': None}
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_args' from command line to 'None'
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_target' from command line to 'None'
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.693s] Level 5:colcon.colcon_core.verb:set package 'arm_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.693s] DEBUG:colcon.colcon_core.verb:Building package 'arm_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/rida/fakescience/build/arm_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/rida/fakescience/install/arm_description', 'merge_install': False, 'path': '/home/rida/fakescience/src/tasc_arm/src/arm_description', 'symlink_install': False, 'test_result_base': None}
+[2.694s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.696s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.697s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rida/fakescience/src/tasc_arm/src/arm_2026' with build type 'ament_cmake'
+[2.698s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rida/fakescience/src/tasc_arm/src/arm_2026'
+[2.722s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.723s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.723s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.749s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/rida/fakescience/src/tasc_arm/src/arm_bringup' with build type 'ament_python'
+[2.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_bringup', 'ament_prefix_path')
+[2.751s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/hook/ament_prefix_path.ps1'
+[2.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/hook/ament_prefix_path.dsv'
+[2.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/hook/ament_prefix_path.sh'
+[2.765s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.765s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.785s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rida/fakescience/src/tasc_arm/src/arm_control' with build type 'ament_cmake'
+[2.786s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rida/fakescience/src/tasc_arm/src/arm_control'
+[2.787s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.787s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.820s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_2026': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake /home/rida/fakescience/src/tasc_arm/src/arm_2026 -DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_2026
+[3.762s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/rida/fakescience/src/tasc_arm/src/arm_bringup'
+[3.769s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.769s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake /home/rida/fakescience/src/tasc_arm/src/arm_control -DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_control
+[6.336s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/src/tasc_arm/src/arm_bringup': PYTHONPATH=/home/rida/fakescience/build/arm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rida/fakescience/install/arm_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/arm_bringup build --build-base /home/rida/fakescience/build/arm_bringup/build install --record /home/rida/fakescience/build/arm_bringup/install.log --single-version-externally-managed install_data
+[7.244s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/src/tasc_arm/src/arm_bringup' returned '0': PYTHONPATH=/home/rida/fakescience/build/arm_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/rida/fakescience/install/arm_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/arm_bringup build --build-base /home/rida/fakescience/build/arm_bringup/build install --record /home/rida/fakescience/build/arm_bringup/install.log --single-version-externally-managed install_data
+[7.266s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_bringup' for CMake module files
+[7.268s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_bringup' for CMake config files
+[7.270s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_bringup/lib'
+[7.270s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_bringup/bin'
+[7.270s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_bringup/lib/pkgconfig/arm_bringup.pc'
+[7.271s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_bringup/lib/python3.10/site-packages'
+[7.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_bringup', 'pythonpath')
+[7.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/hook/pythonpath.ps1'
+[7.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/hook/pythonpath.dsv'
+[7.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/hook/pythonpath.sh'
+[7.278s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_bringup/bin'
+[7.278s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_bringup)
+[7.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/package.ps1'
+[7.283s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/package.dsv'
+[7.286s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/package.sh'
+[7.289s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/package.bash'
+[7.293s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_bringup/share/arm_bringup/package.zsh'
+[7.296s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rida/fakescience/install/arm_bringup/share/colcon-core/packages/arm_bringup)
+[7.299s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/rida/fakescience/src/tasc_arm/src/arm_description' with build type 'ament_cmake'
+[7.299s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/rida/fakescience/src/tasc_arm/src/arm_description'
+[7.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake /home/rida/fakescience/src/tasc_arm/src/arm_description -DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_description
+[9.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake /home/rida/fakescience/src/tasc_arm/src/arm_description -DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_description
+[9.789s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/rida/fakescience/build/arm_description -- -j3 -l3
+[9.932s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/rida/fakescience/build/arm_description -- -j3 -l3
+[9.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --install /home/rida/fakescience/build/arm_description
+[10.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake /home/rida/fakescience/src/tasc_arm/src/arm_control -DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_control
+[10.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/rida/fakescience/build/arm_control -- -j3 -l3
+[11.317s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_description)
+[11.318s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description' for CMake module files
+[11.317s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --install /home/rida/fakescience/build/arm_description
+[11.319s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description' for CMake config files
+[11.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_description', 'cmake_prefix_path')
+[11.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_description/share/arm_description/hook/cmake_prefix_path.ps1'
+[11.321s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_description/share/arm_description/hook/cmake_prefix_path.dsv'
+[11.322s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_description/share/arm_description/hook/cmake_prefix_path.sh'
+[11.324s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description/bin'
+[11.324s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description/lib/pkgconfig/arm_description.pc'
+[11.324s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description/lib/python3.10/site-packages'
+[11.325s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description/bin'
+[11.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_description/share/arm_description/package.ps1'
+[11.327s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rida/fakescience/install/arm_description/share/arm_description/package.dsv'
+[11.328s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_description/share/arm_description/package.sh'
+[11.329s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_description/share/arm_description/package.bash'
+[11.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_description/share/arm_description/package.zsh'
+[11.330s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rida/fakescience/install/arm_description/share/colcon-core/packages/arm_description)
+[11.332s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_description)
+[11.332s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description' for CMake module files
+[11.333s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description' for CMake config files
+[11.334s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_description', 'cmake_prefix_path')
+[11.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_description/share/arm_description/hook/cmake_prefix_path.ps1'
+[11.335s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_description/share/arm_description/hook/cmake_prefix_path.dsv'
+[11.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_description/share/arm_description/hook/cmake_prefix_path.sh'
+[11.341s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description/bin'
+[11.342s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description/lib/pkgconfig/arm_description.pc'
+[11.342s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description/lib/python3.10/site-packages'
+[11.343s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_description/bin'
+[11.343s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_description/share/arm_description/package.ps1'
+[11.345s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rida/fakescience/install/arm_description/share/arm_description/package.dsv'
+[11.346s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_description/share/arm_description/package.sh'
+[11.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_description/share/arm_description/package.bash'
+[11.350s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_description/share/arm_description/package.zsh'
+[11.351s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rida/fakescience/install/arm_description/share/colcon-core/packages/arm_description)
+[11.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_2026' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake /home/rida/fakescience/src/tasc_arm/src/arm_2026 -DCMAKE_INSTALL_PREFIX=/home/rida/fakescience/install/arm_2026
+[11.776s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_2026': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/rida/fakescience/build/arm_2026 -- -j3 -l3
+[45.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/rida/fakescience/build/arm_control -- -j3 -l3
+[45.732s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --install /home/rida/fakescience/build/arm_control
+[45.818s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_control)
+[45.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --install /home/rida/fakescience/build/arm_control
+[45.820s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control' for CMake module files
+[45.823s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control' for CMake config files
+[45.824s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_control', 'cmake_prefix_path')
+[45.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_control/share/arm_control/hook/cmake_prefix_path.ps1'
+[45.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_control/share/arm_control/hook/cmake_prefix_path.dsv'
+[45.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_control/share/arm_control/hook/cmake_prefix_path.sh'
+[45.828s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/lib'
+[45.828s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_control', 'ld_library_path_lib')
+[45.829s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_control/share/arm_control/hook/ld_library_path_lib.ps1'
+[45.830s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_control/share/arm_control/hook/ld_library_path_lib.dsv'
+[45.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_control/share/arm_control/hook/ld_library_path_lib.sh'
+[45.832s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/bin'
+[45.832s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/lib/pkgconfig/arm_control.pc'
+[45.833s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/lib/python3.10/site-packages'
+[45.834s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/bin'
+[45.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_control/share/arm_control/package.ps1'
+[45.836s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rida/fakescience/install/arm_control/share/arm_control/package.dsv'
+[45.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_control/share/arm_control/package.sh'
+[45.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_control/share/arm_control/package.bash'
+[45.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_control/share/arm_control/package.zsh'
+[45.842s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rida/fakescience/install/arm_control/share/colcon-core/packages/arm_control)
+[45.844s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_control)
+[45.845s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control' for CMake module files
+[45.847s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control' for CMake config files
+[45.848s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_control', 'cmake_prefix_path')
+[45.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_control/share/arm_control/hook/cmake_prefix_path.ps1'
+[45.850s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_control/share/arm_control/hook/cmake_prefix_path.dsv'
+[45.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_control/share/arm_control/hook/cmake_prefix_path.sh'
+[45.854s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/lib'
+[45.855s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_control', 'ld_library_path_lib')
+[45.855s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_control/share/arm_control/hook/ld_library_path_lib.ps1'
+[45.857s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_control/share/arm_control/hook/ld_library_path_lib.dsv'
+[45.858s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_control/share/arm_control/hook/ld_library_path_lib.sh'
+[45.860s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/bin'
+[45.860s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/lib/pkgconfig/arm_control.pc'
+[45.860s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/lib/python3.10/site-packages'
+[45.861s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_control/bin'
+[45.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_control/share/arm_control/package.ps1'
+[45.864s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rida/fakescience/install/arm_control/share/arm_control/package.dsv'
+[45.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_control/share/arm_control/package.sh'
+[45.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_control/share/arm_control/package.bash'
+[45.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_control/share/arm_control/package.zsh'
+[45.870s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rida/fakescience/install/arm_control/share/colcon-core/packages/arm_control)
+[63.761s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_2026' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --build /home/rida/fakescience/build/arm_2026 -- -j3 -l3
+[63.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/rida/fakescience/build/arm_2026': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --install /home/rida/fakescience/build/arm_2026
+[63.950s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_2026)
+[63.951s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026' for CMake module files
+[63.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/rida/fakescience/build/arm_2026' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rida/asimov_ws/install/rover_dashboard:/home/rida/asimov_ws/install/drive_bringup:/home/rida/asimov_ws/install/phidgets_hardware:/home/rida/asimov_ws/install/drive_description:/home/rida/asimov_ws/install/drive_control:/home/rida/asimov_ws Rida Test/install/rover_dashboard:/home/rida/asimov_ws Rida Test/install/drive_bringup:/home/rida/asimov_ws Rida Test/install/drive_control:/home/rida/ros2control/install/rqt_controller_manager:/home/rida/ros2control/install/ros2controlcli:/opt/ros/humble /usr/bin/cmake --install /home/rida/fakescience/build/arm_2026
+[63.954s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026' for CMake config files
+[63.955s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_2026', 'cmake_prefix_path')
+[63.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/cmake_prefix_path.ps1'
+[63.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/cmake_prefix_path.dsv'
+[63.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/cmake_prefix_path.sh'
+[63.959s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/lib'
+[63.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_2026', 'ld_library_path_lib')
+[63.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/ld_library_path_lib.ps1'
+[63.962s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/ld_library_path_lib.dsv'
+[63.963s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/ld_library_path_lib.sh'
+[63.964s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/bin'
+[63.964s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/lib/pkgconfig/arm_2026.pc'
+[63.965s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/lib/python3.10/site-packages'
+[63.966s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/bin'
+[63.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.ps1'
+[63.968s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.dsv'
+[63.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.sh'
+[63.970s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.bash'
+[63.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.zsh'
+[63.972s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rida/fakescience/install/arm_2026/share/colcon-core/packages/arm_2026)
+[63.973s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(arm_2026)
+[63.974s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026' for CMake module files
+[63.975s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026' for CMake config files
+[63.976s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_2026', 'cmake_prefix_path')
+[63.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/cmake_prefix_path.ps1'
+[63.977s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/cmake_prefix_path.dsv'
+[63.979s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/cmake_prefix_path.sh'
+[63.981s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/lib'
+[63.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('arm_2026', 'ld_library_path_lib')
+[63.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/ld_library_path_lib.ps1'
+[63.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/ld_library_path_lib.dsv'
+[63.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/rida/fakescience/install/arm_2026/share/arm_2026/hook/ld_library_path_lib.sh'
+[63.984s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/bin'
+[63.985s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/lib/pkgconfig/arm_2026.pc'
+[63.985s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/lib/python3.10/site-packages'
+[63.985s] Level 1:colcon.colcon_core.environment:checking '/home/rida/fakescience/install/arm_2026/bin'
+[63.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.ps1'
+[63.987s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.dsv'
+[63.988s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.sh'
+[63.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.bash'
+[63.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/rida/fakescience/install/arm_2026/share/arm_2026/package.zsh'
+[63.992s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/rida/fakescience/install/arm_2026/share/colcon-core/packages/arm_2026)
+[63.993s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[63.993s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[63.994s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[63.994s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[64.018s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[64.018s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[64.018s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[64.080s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[64.081s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rida/fakescience/install/local_setup.ps1'
+[64.084s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rida/fakescience/install/_local_setup_util_ps1.py'
+[64.088s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rida/fakescience/install/setup.ps1'
+[64.097s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rida/fakescience/install/local_setup.sh'
+[64.099s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/rida/fakescience/install/_local_setup_util_sh.py'
+[64.101s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rida/fakescience/install/setup.sh'
+[64.109s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rida/fakescience/install/local_setup.bash'
+[64.111s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rida/fakescience/install/setup.bash'
+[64.119s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/rida/fakescience/install/local_setup.zsh'
+[64.121s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/rida/fakescience/install/setup.zsh'

@@ -1,0 +1,12 @@
+/home/rida/fakescience/build/arm_2026/CMakeFiles/uninstall.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/arm_2026_uninstall.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/arm_2026.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/arm_2026_keyboard_teleop.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/arm_2026_joystick_teleop.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/test.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/edit_cache.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/rebuild_cache.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/list_install_components.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/install.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/install/local.dir
+/home/rida/fakescience/build/arm_2026/CMakeFiles/install/strip.dir

@@ -1,0 +1,10 @@
+/home/rida/fakescience/build/arm_control/CMakeFiles/uninstall.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/arm_control_uninstall.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/arm_control.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/test.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/edit_cache.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/rebuild_cache.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/list_install_components.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/install.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/install/local.dir
+/home/rida/fakescience/build/arm_control/CMakeFiles/install/strip.dir

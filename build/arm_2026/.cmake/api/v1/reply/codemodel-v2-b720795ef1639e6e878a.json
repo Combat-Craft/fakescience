@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-748813617a59a4a30d64.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "arm_2026",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_2026::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_2026-3e406b2fdcca83f266e5.json",
+					"name" : "arm_2026",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_2026_joystick_teleop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_2026_joystick_teleop-b4910f2893c9de5ae617.json",
+					"name" : "arm_2026_joystick_teleop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_2026_keyboard_teleop::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_2026_keyboard_teleop-158ea2f75f03bd01db9f.json",
+					"name" : "arm_2026_keyboard_teleop",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "arm_2026_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-arm_2026_uninstall-4e15ca4ee78af7c6b3e2.json",
+					"name" : "arm_2026_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3121fe6346b9496f6e55.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rida/fakescience/build/arm_2026",
+		"source" : "/home/rida/fakescience/src/tasc_arm/src/arm_2026"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
